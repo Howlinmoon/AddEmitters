@@ -25,6 +25,8 @@
 		96CE4D391B41ACFB009B756E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96CE4D371B41ACFB009B756E /* InfoPlist.strings */; };
 		96CE4D3B1B41ACFB009B756E /* AddEmittersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CE4D3A1B41ACFB009B756E /* AddEmittersTests.m */; };
 		96CE4D451B41AE01009B756E /* nightsky.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CE4D441B41AE01009B756E /* nightsky.png */; };
+		96CE4D481B41B145009B756E /* EngineParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96CE4D461B41B145009B756E /* EngineParticle.sks */; };
+		96CE4D491B41B145009B756E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CE4D471B41B145009B756E /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		96CE4D381B41ACFB009B756E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96CE4D3A1B41ACFB009B756E /* AddEmittersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddEmittersTests.m; sourceTree = "<group>"; };
 		96CE4D441B41AE01009B756E /* nightsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nightsky.png; sourceTree = "<group>"; };
+		96CE4D461B41B145009B756E /* EngineParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EngineParticle.sks; sourceTree = "<group>"; };
+		96CE4D471B41B145009B756E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 				96CE4D201B41ACFB009B756E /* ViewController.m */,
 				96CE4D221B41ACFB009B756E /* MyScene.h */,
 				96CE4D231B41ACFB009B756E /* MyScene.m */,
+				96CE4D461B41B145009B756E /* EngineParticle.sks */,
+				96CE4D471B41B145009B756E /* spark.png */,
 				96CE4D251B41ACFB009B756E /* Spaceship.png */,
 				96CE4D271B41ACFB009B756E /* Images.xcassets */,
 				96CE4D111B41ACFB009B756E /* Supporting Files */,
@@ -246,6 +252,8 @@
 				96CE4D151B41ACFB009B756E /* InfoPlist.strings in Resources */,
 				96CE4D281B41ACFB009B756E /* Images.xcassets in Resources */,
 				96CE4D261B41ACFB009B756E /* Spaceship.png in Resources */,
+				96CE4D491B41B145009B756E /* spark.png in Resources */,
+				96CE4D481B41B145009B756E /* EngineParticle.sks in Resources */,
 				96CE4D1E1B41ACFB009B756E /* Main.storyboard in Resources */,
 				96CE4D451B41AE01009B756E /* nightsky.png in Resources */,
 			);

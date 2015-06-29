@@ -11,6 +11,7 @@
 @implementation MyScene {
     // some ivars - aka globals...
     SKSpriteNode *ship;
+    SKEmitterNode *rocketEngine;
     BOOL touching;
 }
 
