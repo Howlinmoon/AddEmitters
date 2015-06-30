@@ -33,6 +33,21 @@
         ship.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:ship.size];
         [self addChild:ship];
         
+        // add the emitter
+        rocketEngine = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"EngineParticle" ofType:@"sks"]];
+        rocketEngine.numParticlesToEmit = 1;
+        
+        // Where to place the emitter?
+        // This is a bad spot
+        //rocketEngine.position = ship.position;
+        //[self addChild:rocketEngine];
+        
+        // try attaching the rocket TO the ship node
+        // use relative co-ords
+        rocketEngine.position = CGPointMake(0, -170);
+        [ship addChild:rocketEngine];
+        
+        
         // edges of scene
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         // reduce gravity
@@ -47,10 +62,12 @@
     /* Called when a touch begins */
     
     touching = YES;
+    rocketEngine.numParticlesToEmit = 0;
 }
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     touching = NO;
+    rocketEngine.numParticlesToEmit = 100;
 }
 
 -(void)update:(CFTimeInterval)currentTime {
